@@ -12,7 +12,7 @@ script:
   - docker rm $(docker ps -a -q)
   - docker rmi $(docker images -q)
   - docker images -a
-
+  - docker images -a
 
 after_script: 
   
