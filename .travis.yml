@@ -1,4 +1,4 @@
 language: java
 sudo: false
-java -jar test-docker.jar
+script: mvn clean install
 
