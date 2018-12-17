@@ -6,6 +6,7 @@ services:
   - docker 
 
 script: 
+  - docker build --tag test-docker .
   - docker images -a
   - docker run test-docker 
 
