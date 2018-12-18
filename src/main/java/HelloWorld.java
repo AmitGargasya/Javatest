@@ -3,6 +3,5 @@ public class HelloWorld {
         // Prints "Hello, World" in the terminal window.
         System.out.println("Hello, World");
         Hello.myMethod();
-        New_testclass.newTest();
     }
 }

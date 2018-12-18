@@ -1,6 +1,6 @@
 public class New_testclass {
-        public static void newTest () {
-            System.out.println("New Test Class");
-        }
-
+    public static void main(String[] args) {
+        // Prints "Hello, World" in the terminal window.
+        System.out.println("Other New Class");
+    }
 }

@@ -1,0 +1,10 @@
+# base image is java:8 (ubuntu)
+FROM java:8
+
+# add files to image
+ADD target/jar2.jar jar2.jar
+
+EXPOSE 8080
+
+# start on run
+CMD ["java", "-jar", "jar2.jar"]
