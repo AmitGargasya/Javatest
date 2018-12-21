@@ -23,52 +23,14 @@
                             <archive>
                                 <manifest>
                                     <mainClass>HelloWorld</mainClass>
+                                    <!--<mainClass>ByeWorld</mainClass>-->
+                                    <!--<mainClass>New_testclass</mainClass>-->
                                 </manifest>
                             </archive>
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
-                            <finalName>jar1</finalName>
-                            <appendAssemblyId>false</appendAssemblyId>
-                        </configuration>
-                    </execution>
-
-                    <execution>
-                        <id>make-assembly2</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>ByeWorld</mainClass>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <finalName>jar2</finalName>
-                            <appendAssemblyId>false</appendAssemblyId>
-                        </configuration>
-                    </execution>
-
-                    <execution>
-                        <id>make-assembly3</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>New_testclass</mainClass>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <finalName>jar3</finalName>
+                            <!--<finalName>jar1</finalName>-->
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>

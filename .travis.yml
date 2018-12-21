@@ -6,23 +6,7 @@ services:
   - docker 
 
 script: 
-  - docker build -f Dockerfile1 -t test-docker1 .
-  - docker images -a
-  - docker run test-docker1
-  - docker rm $(docker ps -a -q)
-  - docker rmi $(docker images -q)
-  - docker images -a
-
-  - docker build -f Dockerfile2 -t test-docker2 .
-  - docker images -a
-  - docker run test-docker2
-  - docker rm $(docker ps -a -q)
-  - docker rmi $(docker images -q)
-  - docker images -a
-
-  - docker build -f Dockerfile3 -t test-docker3 .
-  - docker images -a
-  - docker run test-docker3
+  - bash travis_start.sh; function("docker-test1", "HelloWorld")
   - docker rm $(docker ps -a -q)
   - docker rmi $(docker images -q)
   - docker images -a
