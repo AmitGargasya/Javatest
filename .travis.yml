@@ -7,7 +7,6 @@ services:
 
 script: 
   - bash travis_start.sh docker-test1 HelloWorld
-  - bash travis_start.sh docker-test2 ByeWorld
   - docker rm $(docker ps -a -q)
   - docker rmi $(docker images -q)
   - docker images -a
